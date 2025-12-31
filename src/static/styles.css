@@ -96,17 +96,25 @@ section h3 {
 
 .activity-card .participants li {
   margin-bottom: 5px;
-  padding-left: 20px;
+  padding-left: 0;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #333;
 }
 
-.activity-card .participants li::before {
-  content: "•";
-  color: #0066cc;
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
   font-weight: bold;
-  position: absolute;
-  left: 0;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: color 0.2s;
+}
+
+.delete-participant:hover {
+  color: #b71c1c;
 }
 
 .form-group {
